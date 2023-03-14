@@ -6,8 +6,9 @@ export default defineConfig({
   plugins: [
     visionTool({
       // Note: These are both optional
-      defaultApiVersion: 'v2021-10-21',
-      defaultDataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+      apiVersion: 'v2021-10-21',
+      dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+      projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
     }),
   ],
 })
